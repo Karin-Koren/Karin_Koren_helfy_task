@@ -15,7 +15,6 @@ function TaskItem({task, onDelete, onToggle, onEdit}) {
       <p>{description}</p>
       <div className="task-footer">
         <span>Created: {new Date(createdAt).toLocaleString()}</span>
-        <span>Status: {completed ? "✅ Completed" : "❌ Open"}</span>
       </div>
       <div>
         <button onClick={() => onEdit && onEdit(task)}>📝</button>
